@@ -6,24 +6,28 @@
 exports.view = function(req, res){
   res.render('index', {
   	'projects': [
-      { 'name': 'Waiting in Line',
-        'image': 'lorempixel.people.1.jpeg',
+      { 'name': 'Home',
+        'url': 'file:///C:/Users/Audrey/Documents/Websites/GOW-tips-website/bestGOWtips.html?search=p',
+        'id': 'project0'
+      },
+      { 'name': 'Core Recipes',
+        'url': 'file:///C:/Users/Audrey/Documents/Websites/GOW-tips-website/bestGOWtips-CoreRecipes.html',
         'id': 'project1'
       },
-      { 'name': 'Needfinding',
-        'image': 'lorempixel.city.1.jpeg',
+      { 'name': 'Gear Choices',
+        'url': 'lorempixel.city.1.jpeg',
         'id': 'project2'
       },
-      { 'name': 'Prototyping',
-        'image': 'lorempixel.technics.1.jpeg',
+      { 'name': 'Starter Tips',
+        'url': 'lorempixel.technics.1.jpeg',
         'id': 'project3'
       },
-      { 'name': 'Heuristic Evaluation',
-        'image': 'lorempixel.abstract.1.jpeg',
+      { 'name': 'Chatrooms',
+        'url': 'lorempixel.abstract.1.jpeg',
         'id': 'project4'
       },
-      { 'name': 'Visualization',
-        'image': 'lorempixel.abstract.8.jpeg',
+      { 'name': 'Traps',
+        'url': 'lorempixel.abstract.8.jpeg',
         'id': 'project5'
       },
       { 'name': 'Social design',

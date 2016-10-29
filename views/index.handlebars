@@ -2,12 +2,20 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>BestGOWtips</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
+	<link href="/css/stylesheets.css" rel="stylesheet">
+
+	<style>
+		html {
+		background-image: url("/images/gray-pixel.jpg");
+	}
+
+	</style>
+	<!--00<link href="/css/introHCI.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,11 +27,13 @@
 </head>
 
 <body>
-	<div class="container">
+
+
+	<!--<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
+		<!-- p means paragraph 
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
+			<h1>Bleh Ethan</h1>
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
 		</div>
 		<ol>
@@ -35,7 +45,7 @@
 		<h4>Projects</h4>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks 
 		{{#each projects}}
 		<div class="project" id="{{id}}">
 			<a href="project/{{name}}" class="thumbnail">
@@ -46,7 +56,80 @@
 		{{/each}}
 
 		
-	</div>
+	</div>-->
+
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+    {{#each projects}}
+      <li class="active"><a href="{{url}}">{{name}}</a></li>
+     {{/each}}
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+
+
+
+
+
+
+  </div>
+</nav>
+
+    <form>
+  <input class="navbar-right" type="text" name="search" placeholder="Search..">
+</form>
+
+
+
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand">
+                        <a href="#home"><span class="fa fa-home solo">Core Recipes</span></a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#anch1">
+                            <span class="fa fa-anchor solo">Anchor 1</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#anch2">
+                            <span class="fa fa-anchor solo">Anchor 2</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#anch3">
+                            <span class="fa fa-anchor solo">Anchor 3</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#anch4">
+                            <span class="fa fa-anchor solo">Anchor 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        
+        
+
+    </div>
+
+
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
